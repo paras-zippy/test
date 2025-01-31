@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_221bead89596ebcf20036efd00b58b9a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_221bead89596ebcf20036efd00b58b9a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_221bead89596ebcf20036efd00b58b9a = L.map(
+                "map_221bead89596ebcf20036efd00b58b9a",
+                {
+                    center: [12.9716, 77.5946],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_af6df45c024b595f8ec6bb1811f8b0c1 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_af6df45c024b595f8ec6bb1811f8b0c1.addTo(map_221bead89596ebcf20036efd00b58b9a);
+        
+    
+            var marker_615b832f3bfb52485411ec2ef14109c2 = L.marker(
+                [12.3052, 76.6552],
+                {
+}
+            ).addTo(map_221bead89596ebcf20036efd00b58b9a);
+        
+    
+            var icon_29863453e7b6838e29746500830e11df = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_615b832f3bfb52485411ec2ef14109c2.setIcon(icon_29863453e7b6838e29746500830e11df);
+        
+    
+        var popup_9087dec6c1699922e4f3a347b524589a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b716035dd9d91112cfd1da0943d1d6ac = $(`<div id="html_b716035dd9d91112cfd1da0943d1d6ac" style="width: 100.0%; height: 100.0%;">     <b>Name:</b> Mysore Palace<br>     <b>Rank:</b> 1<br>     <b>Annual Visitors:</b> 2,500,000     </div>`)[0];
+                popup_9087dec6c1699922e4f3a347b524589a.setContent(html_b716035dd9d91112cfd1da0943d1d6ac);
+            
+        
+
+        marker_615b832f3bfb52485411ec2ef14109c2.bindPopup(popup_9087dec6c1699922e4f3a347b524589a)
+        ;
+
+        
+    
+    
+            var marker_3825dd8bab480609b8fbbe9204463716 = L.marker(
+                [13.3701, 77.6831],
+                {
+}
+            ).addTo(map_221bead89596ebcf20036efd00b58b9a);
+        
+    
+            var icon_ea4ec2487f1a502c2050ba8de82bb1dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3825dd8bab480609b8fbbe9204463716.setIcon(icon_ea4ec2487f1a502c2050ba8de82bb1dd);
+        
+    
+        var popup_e7802aac161c44604fae3b998fe06167 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2b108a4bdf8576cb924276a64c7d3b39 = $(`<div id="html_2b108a4bdf8576cb924276a64c7d3b39" style="width: 100.0%; height: 100.0%;">     <b>Name:</b> Nandi Hills<br>     <b>Rank:</b> 2<br>     <b>Annual Visitors:</b> 1,800,000     </div>`)[0];
+                popup_e7802aac161c44604fae3b998fe06167.setContent(html_2b108a4bdf8576cb924276a64c7d3b39);
+            
+        
+
+        marker_3825dd8bab480609b8fbbe9204463716.bindPopup(popup_e7802aac161c44604fae3b998fe06167)
+        ;
+
+        
+    
+    
+            var marker_fe44e7279f334c04ebeac9a8061774bb = L.marker(
+                [12.8349, 77.3999],
+                {
+}
+            ).addTo(map_221bead89596ebcf20036efd00b58b9a);
+        
+    
+            var icon_b11c257f633e999b3fbe51c137f42335 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fe44e7279f334c04ebeac9a8061774bb.setIcon(icon_b11c257f633e999b3fbe51c137f42335);
+        
+    
+        var popup_e820101a709a0f26ec9c1452eee73749 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dc42c2c8c5850f9fe6541cd51b9b17fd = $(`<div id="html_dc42c2c8c5850f9fe6541cd51b9b17fd" style="width: 100.0%; height: 100.0%;">     <b>Name:</b> Wonderla Amusement Park<br>     <b>Rank:</b> 3<br>     <b>Annual Visitors:</b> 1,500,000     </div>`)[0];
+                popup_e820101a709a0f26ec9c1452eee73749.setContent(html_dc42c2c8c5850f9fe6541cd51b9b17fd);
+            
+        
+
+        marker_fe44e7279f334c04ebeac9a8061774bb.bindPopup(popup_e820101a709a0f26ec9c1452eee73749)
+        ;
+
+        
+    
+    
+            var marker_de327651c2cb11321edec264a490483b = L.marker(
+                [12.8003, 77.5779],
+                {
+}
+            ).addTo(map_221bead89596ebcf20036efd00b58b9a);
+        
+    
+            var icon_0d726ad45817d0b590e37fe5188689aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_de327651c2cb11321edec264a490483b.setIcon(icon_0d726ad45817d0b590e37fe5188689aa);
+        
+    
+        var popup_b0af6d6e3c953cf5a3a3c5ee4845165c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_90c7dd683e9710596ef6541c152852cb = $(`<div id="html_90c7dd683e9710596ef6541c152852cb" style="width: 100.0%; height: 100.0%;">     <b>Name:</b> Bannerghatta National Park<br>     <b>Rank:</b> 4<br>     <b>Annual Visitors:</b> 1,200,000     </div>`)[0];
+                popup_b0af6d6e3c953cf5a3a3c5ee4845165c.setContent(html_90c7dd683e9710596ef6541c152852cb);
+            
+        
+
+        marker_de327651c2cb11321edec264a490483b.bindPopup(popup_b0af6d6e3c953cf5a3a3c5ee4845165c)
+        ;
+
+        
+    
+    
+            var marker_d6ed5590d0c15e7967c75f95f55b0f8c = L.marker(
+                [12.7233, 77.3009],
+                {
+}
+            ).addTo(map_221bead89596ebcf20036efd00b58b9a);
+        
+    
+            var icon_6cb83f75cf4ddd175bfa0298fbe5cdb3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d6ed5590d0c15e7967c75f95f55b0f8c.setIcon(icon_6cb83f75cf4ddd175bfa0298fbe5cdb3);
+        
+    
+        var popup_53ec61a7ff4798fd76a00e2f5fa93a5a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2160bd5afdd12a5f32fa12d3fcc2d4c4 = $(`<div id="html_2160bd5afdd12a5f32fa12d3fcc2d4c4" style="width: 100.0%; height: 100.0%;">     <b>Name:</b> Ramanagara<br>     <b>Rank:</b> 5<br>     <b>Annual Visitors:</b> 900,000     </div>`)[0];
+                popup_53ec61a7ff4798fd76a00e2f5fa93a5a.setContent(html_2160bd5afdd12a5f32fa12d3fcc2d4c4);
+            
+        
+
+        marker_d6ed5590d0c15e7967c75f95f55b0f8c.bindPopup(popup_53ec61a7ff4798fd76a00e2f5fa93a5a)
+        ;
+
+        
+    
+    
+            var marker_1bef5247278ca1e7ab1768bce6cb255f = L.marker(
+                [12.2863, 77.1609],
+                {
+}
+            ).addTo(map_221bead89596ebcf20036efd00b58b9a);
+        
+    
+            var icon_5b53239587cb4a5bf875d8ba2b0c3ea7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1bef5247278ca1e7ab1768bce6cb255f.setIcon(icon_5b53239587cb4a5bf875d8ba2b0c3ea7);
+        
+    
+        var popup_3e4fd0bb142978d16b6487c9b7a0fbab = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_661c74b45981460500b9a274c4a3f747 = $(`<div id="html_661c74b45981460500b9a274c4a3f747" style="width: 100.0%; height: 100.0%;">     <b>Name:</b> Shivanasamudra Falls<br>     <b>Rank:</b> 6<br>     <b>Annual Visitors:</b> 750,000     </div>`)[0];
+                popup_3e4fd0bb142978d16b6487c9b7a0fbab.setContent(html_661c74b45981460500b9a274c4a3f747);
+            
+        
+
+        marker_1bef5247278ca1e7ab1768bce6cb255f.bindPopup(popup_3e4fd0bb142978d16b6487c9b7a0fbab)
+        ;
+
+        
+    
+    
+            var marker_34e5a077fca6bf2d0d106ff8092334d1 = L.marker(
+                [13.8059, 77.786],
+                {
+}
+            ).addTo(map_221bead89596ebcf20036efd00b58b9a);
+        
+    
+            var icon_0f4e4134c6a3be381561756a05d0f8d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_34e5a077fca6bf2d0d106ff8092334d1.setIcon(icon_0f4e4134c6a3be381561756a05d0f8d6);
+        
+    
+        var popup_931b8c56b044093e670ed7e351239566 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f0ffd0718a5991d19742125010b31761 = $(`<div id="html_f0ffd0718a5991d19742125010b31761" style="width: 100.0%; height: 100.0%;">     <b>Name:</b> Lepakshi Temple<br>     <b>Rank:</b> 7<br>     <b>Annual Visitors:</b> 600,000     </div>`)[0];
+                popup_931b8c56b044093e670ed7e351239566.setContent(html_f0ffd0718a5991d19742125010b31761);
+            
+        
+
+        marker_34e5a077fca6bf2d0d106ff8092334d1.bindPopup(popup_931b8c56b044093e670ed7e351239566)
+        ;
+
+        
+    
+    
+            var marker_4bd47aa0fb2c47c81a957a2b451791fc = L.marker(
+                [12.9027, 77.4211],
+                {
+}
+            ).addTo(map_221bead89596ebcf20036efd00b58b9a);
+        
+    
+            var icon_ac3cf5317bdf2b673e3fbd2a4676d402 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4bd47aa0fb2c47c81a957a2b451791fc.setIcon(icon_ac3cf5317bdf2b673e3fbd2a4676d402);
+        
+    
+        var popup_1a449f10c88a2f553e59607f0d6b745a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4de3026d89cc03ff84734a241f70f417 = $(`<div id="html_4de3026d89cc03ff84734a241f70f417" style="width: 100.0%; height: 100.0%;">     <b>Name:</b> Savandurga Hill<br>     <b>Rank:</b> 8<br>     <b>Annual Visitors:</b> 500,000     </div>`)[0];
+                popup_1a449f10c88a2f553e59607f0d6b745a.setContent(html_4de3026d89cc03ff84734a241f70f417);
+            
+        
+
+        marker_4bd47aa0fb2c47c81a957a2b451791fc.bindPopup(popup_1a449f10c88a2f553e59607f0d6b745a)
+        ;
+
+        
+    
+    
+            var marker_60cf289ef8dec020b951e33435c030c8 = L.marker(
+                [12.2123, 77.0743],
+                {
+}
+            ).addTo(map_221bead89596ebcf20036efd00b58b9a);
+        
+    
+            var icon_034d85d85526dde9f347f7deb540b37e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_60cf289ef8dec020b951e33435c030c8.setIcon(icon_034d85d85526dde9f347f7deb540b37e);
+        
+    
+        var popup_6b2cd20ec28fdbfc53c9acf74a073300 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f74d71c024aff6c8d253221a8016274f = $(`<div id="html_f74d71c024aff6c8d253221a8016274f" style="width: 100.0%; height: 100.0%;">     <b>Name:</b> Talakadu<br>     <b>Rank:</b> 9<br>     <b>Annual Visitors:</b> 400,000     </div>`)[0];
+                popup_6b2cd20ec28fdbfc53c9acf74a073300.setContent(html_f74d71c024aff6c8d253221a8016274f);
+            
+        
+
+        marker_60cf289ef8dec020b951e33435c030c8.bindPopup(popup_6b2cd20ec28fdbfc53c9acf74a073300)
+        ;
+
+        
+    
+    
+            var marker_61d9540d76ef26aa8ba05f874ba14c73 = L.marker(
+                [12.3615, 77.5134],
+                {
+}
+            ).addTo(map_221bead89596ebcf20036efd00b58b9a);
+        
+    
+            var icon_0843b74fa5551883f4183d1107f3c1c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_61d9540d76ef26aa8ba05f874ba14c73.setIcon(icon_0843b74fa5551883f4183d1107f3c1c1);
+        
+    
+        var popup_1f4bcf1af130d191bbb997d569aef922 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0464589650fa6b74f8fa7b26e315275a = $(`<div id="html_0464589650fa6b74f8fa7b26e315275a" style="width: 100.0%; height: 100.0%;">     <b>Name:</b> Chunchi Falls<br>     <b>Rank:</b> 10<br>     <b>Annual Visitors:</b> 300,000     </div>`)[0];
+                popup_1f4bcf1af130d191bbb997d569aef922.setContent(html_0464589650fa6b74f8fa7b26e315275a);
+            
+        
+
+        marker_61d9540d76ef26aa8ba05f874ba14c73.bindPopup(popup_1f4bcf1af130d191bbb997d569aef922)
+        ;
+
+        
+    
+    
+            tile_layer_af6df45c024b595f8ec6bb1811f8b0c1.addTo(map_221bead89596ebcf20036efd00b58b9a);
+        
+    
+            tile_layer_af6df45c024b595f8ec6bb1811f8b0c1.addTo(map_221bead89596ebcf20036efd00b58b9a);
+        
+</script>
+</html>
